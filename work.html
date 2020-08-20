@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+        <title>Finished Work | Bracken</title>
+		
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+		
+		<link rel='stylesheet' href='css/main.css'>
+		<link rel='stylesheet' href='css/styles.css'>
+		<link rel='stylesheet' href='css/work.css'>
+		<link rel='stylesheet' href='css/normalize.min.css'>	
+		
+		<script src='js/vendor/modernizr-2.6.2.min.js'></script>
+    </head>
+    <body>
+		<!--[if lt IE 7]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+				<div id="tires">tires</div>
+				<img src="images/bracken_logo.png" class="logo"/>
+                <nav>
+					<a href="index.html">Home</a>
+					<a href="maintenance.html">Maintenance</a>
+					<a href="paving.html">Paving</a>
+					<a href="concrete.html">Concrete</a>	
+					<a href="work.html" class="current-page">Finished Work</a>
+					<a href="estimates.html">Estimates</a>
+					<a href="about.html">About</a>
+					<a href="contact.html">Contact</a>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+				<!--
+				<div class="page-banners">
+					<img src="images/page-banners/work-banner.jpg"/>
+				</div>
+				-->
+				
+                <header>
+                    <h1>Finished Work</h1>
+					
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id purus tortor. Ut mollis urna id urna accumsan lacinia. In convallis, arcu quis tempus laoreet, ligula massa molestie felis, at sagittis elit felis non nulla. Aliquam erat volutpat. Duis sagittis purus vitae tortor mattis, et feugiat lacus tempus. Nam ultricies pellentesque gravida. Curabitur fermentum neque sed gravida lacinia. Nunc velit nibh, aliquet sit amet accumsan eget, egestas ut lacus. Donec at pharetra diam, et rhoncus ante.</p>
+                </header>
+																						
+				<div id="work-slider-frame">
+					<img src="images/bracken_logo.png" alt="" />
+				</div>
+				
+				<article id="work-slider-icons">
+					<!--
+						load all pictures newest to oldest 
+						always show organized by date (even when just showing categories
+					-->
+				
+					<img src="images/finished_work/IMG_0049.jpg" alt="" />
+
+					<img src="images/finished_work/20200806_120932.jpg" alt="" />
+
+					<img src="images/finished_work/sports/20191003_184018_Original.jpeg" alt="" />
+					<img src="images/finished_work/sports/20191003_184132_Original.jpeg" alt="" />
+					<img src="images/finished_work/sports/20191003_184411_Original.jpeg" alt="" />
+					<img src="images/finished_work/sports/20191003_184416_Original.jpeg" alt="" />
+					<img src="images/finished_work/sports/20191118_172717_Original.jpeg" alt="" />
+					<img src="images/finished_work/sports/20191118_172731_Original.jpeg" alt="" />
+					<img src="images/finished_work/sports/20191118_172747_Original.jpeg" alt="" />
+			
+	                <!--
+					<footer>
+	                    <h3>Any Questions, Just Contact Us</h3>
+						<p>If you need any further information or have questions, please <a href="contact.html">contact</a> us. You can call us at <a href="tel:423.323.8197">423.323.8197</a> or send us an <a href="mailto:tiffani@brackenpaving.com">email</a>.</p>
+					</footer>
+					-->
+				</article>
+				
+                <aside>
+					<h3>Completed Jobs</h3>	
+                    <ul>
+						<li>All</li>
+						<li>Commercial</li>
+						<li>Paving</li>
+						<li>Seal Coating</li>
+						<li>Concrete</li>
+						<li>Sports Courts</li>
+					</ul>
+					<!--
+                    <h3>Services</h3>
+					<p>We provide full paving services, seal coating and repairs, as well as concrete options. Contact us for a <a href="estimates.html">free estimate</a> in any field as to how we can help your residence or business.</p>
+					-->
+                </aside>
+					
+            </div> <!-- .main -->
+        </div> <!-- .main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+				
+                <h3>Bracken: <a href="tel:4233238197">423.323.8197</a></h3>
+				
+				<div id="copyright">
+					<span>&copy;</span>
+					2020 Bracken Paving | all rights reserved
+				</div>
+				
+				<div id="social_links">
+					<a href="https://www.facebook.com/brackenpaving"><img src="images/facebook_icon.svg" alt="visit our facebook page!"/></a>
+					<a href="https://www.twitter.com/brackenpaving"><img src="images/twitter_icon.svg" alt="follow us on twitter!"/></a>
+				</div>
+				
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.5.1.min.js"><\/script>')</script>
+
+        <script src='js/main.js'></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$('#work-slider-icons img').click(function() {
+					var newImg = $(this).attr('src');
+					$('#work-slider-frame img').attr('src', newImg);
+					return false;
+				});
+			});	
+		</script>
+		
+    </body>
+</html>
