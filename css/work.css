@@ -1,0 +1,40 @@
+/**
+*
+ aside with category nav needs to be on top when page goes to medium and min….
+*
+**/
+
+
+
+/* larger slider frame */
+#work-slider-frame {
+	min-height: 300px;
+	max-height: 500px;
+	overflow: hidden;
+	
+	margin-bottom: 30px;
+	
+	background: #555;
+	border: 1px solid #999;
+}
+	#work-slider-frame img {
+		
+		width: 100%;
+		vertical-align: middle;
+		margin: 0 auto;
+		
+		display: block;
+	}
+	
+	
+/* small selection icon list of images */
+#work-slider-icons {
+	background: #DADADA;
+}
+
+#work-slider-icons img {
+	width: 150px;
+	
+	vertical-align: top;
+}
+

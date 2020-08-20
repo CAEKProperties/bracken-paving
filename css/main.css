@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:wght@300&display=swap');
+
+
+
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+audio, canvas, img, video {
+    vertical-align: middle;
+}
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+.browsehappy {
+    margin: 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.5em;
+}
+
+
+
+/* ==================================
+	Main Colors and Standards 
+   ================================== */
+   
+body {background #F1F1F1;}
+/*
+- - -  simplify all link colors into one section separate from body element division - - - 
+
+a:hover {}
+a:visited {}
+*/ 
+a {text-decoration: none;}
+/*
+.header-container nav a {}
+.header-container nav a:hover {}
+.header-container nav a:visited {} // show no indication (same as normal)
+
+.main-container a {}
+.main-container a:hover {}
+
+.main-container aside a {}
+.main-container aside a:hover {}
+
+.footer-container a {}
+.footer-container a:hover {}
+
+- - - initial styles per template - - - 
+
+a { text-decoration: none; color: #ccc; }
+a:hover { text-decoration: underline; }
+
+- - - major shared styles such as current ' ALL: Gray Themes' - - - 
+
+- - - continent with ALL, and each following category - - - 
+
+———————————————
+header, aside, footer, floating sub-nav - background: #323232
+	- use #333 as variant for text
+
+header border bottom, header nav, footer border top, aside border top: #555555;
+
+!! Correct / summarize body and aside links color - try to align with nav colors? !!
+
+main body, aside - links: #999
+	main body links hover:
+	aside links hover: 
+
+sub-nav links: 
+	hover: 
+	
+floating sub-nav links:
+	hover: 
+
+dark links on link (not main) background: #333
+light links on dark background: #CCC?
+
+yellow color taken from logo
+	#ffc617;
+*/ 
+
+/*
+SHARED STYLES PER DIFFERENT PAGES 
+uniform styling 
+*/
+
+
+
+
+/*
+Home page: kingsport award,
+Paving page: certification icons,
+Contact page: team member pics
+*/
+#kpt_rca, .certification_img, #team-list img, #team-list-sub img {
+	border: 1px solid #AAA;
+	border-radius: 25%;
+	box-shadow: 0px 1px 7px rgba(0,0,0,0.35);
+}
+
+
+
+
+/* ===== Initializr Styles ==================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   Edits made by Travis Leonard
+   ========================================================================== */
+html {}
+
+body {
+	
+    font-size: 1em;
+    line-height: 1.4;
+
+    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+	background: #F1F1F1;
+	color: #222;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+}
+
+
+/* ===================
+    ALL: Gray Theme
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #555555;
+}
+
+.footer-container, .main aside {
+    border-top: 20px solid #555555;
+}
+
+.header-container, .footer-container, .main aside {
+    background: #323232;
+}
+
+.header-container, .main aside, .page-sub-nav-floater {
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.35);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.35);
+
+}
+
+
+.header-container nav, .main aside h3, .footer-container {
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+}
+
+
+/* ===================
+    ALL: Standards
+   =================== */
+   
+   
+
+	
+/* =================
+    MOBILE: Header
+   ================= */
+
+.header-container {
+	position: relative;
+	z-index: 1;
+	
+	overflow: hidden;
+}
+
+
+/* 
+fix box shadow 
+*/
+
+
+#tires {
+	background: url(../images/tire_tread.png) repeat-x;
+	background-size: contain;		
+	position: absolute;
+	height: 8em;
+	width: 200%;
+	top: 200px;
+	left: -20%;
+	opacity: 0.3;
+	transform: rotate(10deg);
+	z-index: -1;
+}
+.logo {
+	display: block;
+	margin: 10px auto;
+	width: 100%;
+	max-width: 1500px;
+	z-index: 1;
+}
+
+/* Main Site Navigation */
+.header-container nav {
+	text-shadow: #333 0 1px 0px;
+}
+.header-container nav ul {}
+.header-container nav ul li {}
+.header-container nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 3px 0;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+
+    color: #AAA;
+    background: #555555;
+	background-image: linear-gradient(#666 0%, #555 100%);
+}
+	.header-container nav a:hover,
+	.header-container nav a:focus,
+	.header-container nav a:active {
+		color: white;
+	}
+	.header-container nav a:visited {
+	    color: #AAA;
+	}
+	.header-container nav a.current-page {
+		color: #ffc617;
+	}
+
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+.main hr {
+	width: 75%;
+	margin: 0px auto;
+}
+
+/* Main Content: Page Banners */
+.page-banners {
+	display: block;
+	
+	//margin-top: -30px; /* main has 30px padding */
+	margin-bottom: 30px;
+	
+	border: 1px solid black;
+	width: 100%;
+}
+
+.page-banners img {
+	width: 100%;
+}
+
+/* Main Content: Page Information */
+.main article h1 {
+    font-size: 2em;
+	margin-top: 0;
+}
+
+.main aside {
+    color: white;
+    padding: 0px 5% 10px;
+	
+	
+	border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* this is from old file….. organize in with rest….
+
+
+
+/* ===================
+   Main
+   =================== */
+.main {}
+/*fix all of this*/
+/*fix all of this*/
+/*fix all of this*/
+/*fix all of this*/
+/*fix all of this*/
+/*fix all of this*/
+
+.main-container {}
+
+.main-container h2, .main-container footer h3 {
+	
+	border-bottom: 1px solid #333;
+	padding-bottom: 3px;
+}
+
+
+/* Main Content: Links */
+.main-container a {
+	
+	color: #999;
+	
+	color: #ffc617;
+	
+}
+
+.main-container a:hover, .main-container a:focus, .main-container a:active {
+	color: black;
+}
+
+
+
+/* Main Content: Aside */
+
+.main aside h3 {
+	position: relative;
+	margin-left: 40px;
+}
+
+.main aside h3:before {
+	content: '';
+	display: block;
+	height: 25px;
+	width: 25px;
+	position: absolute;
+	top: 0;
+	left: -40px;
+	
+	background: url('../images/icon_service.png') no-repeat;
+	background-size: contain;
+}
+
+.main aside a {
+	
+}
+
+.main aside a:hover {
+	text-shadow: 0 1px 1px #555;
+}
+
+
+
+/* Main Content: Sub Nav and Floater **
+
+	seal, pave, concrete, finished work 
+	
+	
+	separate css file specific for these pages..
+	separate js file for these pages..
+	
+	
+	
+*/
+.page-sub-nav h3 {
+	text-align: center;
+}
+
+.page-sub-nav ul, .page-sub-nav-floater ul {
+	padding-left: 0;
+}
+
+/* Main Content: Top Sub Nav */
+.page-sub-nav ul {
+	text-align: center;
+}
+	.page-sub-nav ul li {		
+		background: #CCC;
+		border: 1px solid #777;
+		
+		
+		display: inline-block;
+		list-style: none;
+		
+		margin-right: 5px;
+		margin-bottom: 10px;
+		padding: 0 5px;
+		
+		
+	}
+	.page-sub-nav ul li:hover {		
+		background-color: #323232;
+		color: #CCC;
+		text-shadow: black 0 1px 1px;
+	}
+
+/* Main Content: Floating Sub Nav */
+.page-sub-nav-floater {
+	background: #323232;
+	background: rgba(20,20,20,0.9);
+	border-top:  20px solid #555;
+		
+	position: fixed;
+	right: 0;
+	top: 70px;
+	
+	width: 40%;
+	max-width: 400px;
+	
+	padding: 5px 25px 10px 15px;
+	
+	text-align: center;
+	text-shadow: black 0 1px 1px;
+	
+	border-radius: 5px 0 0 5px;
+	
+	z-index: 1;
+	
+	display: none;
+}
+
+	.page-sub-nav-floater span {
+		display: block;
+		color: white;
+		text-align: center;
+		text-shadow: black 0 1px 3px;
+		font-weight: bold;
+		
+		margin: 5px 0;
+		
+		font-family: 'Fira Sans Extra Condensed', sans-serif;
+		font-size: 125%;
+	}
+	.page-sub-nav-floater ul {
+		margin: 0;
+		position: relative;
+	}
+	.page-sub-nav-floater ul li {
+		display: inline-block;
+		color: #CCC;
+		margin-right: 10px;
+	}
+	.page-sub-nav-floater ul li:hover {
+		color: white;
+	}
+	
+	/* icon to top of page (where selection for sub-nav is) */
+	#floater-nav-top  {	
+		background: url('../images/arrow-top.png') no-repeat;
+		background-size: contain;
+		
+		display: block;
+		width: 30px;
+		height: 30px;
+		
+		position: absolute;
+		top: 3px;
+		right: 10px;
+		
+		z-index: 1;
+	}
+	#floater-nav-top:hover {
+		background: url('../images/arrow-top-hover.png') no-repeat;
+		background-size: contain;
+	}
+.first-sub-content-block {
+	
+}
+
+
+
+/* above this line, from old fine - organize in with the rest */
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==============
+    MOBILE: Footer
+   ============== */
+   
+.footer-container {
+    color: white;
+}
+	.footer-container .wrapper {
+		padding: 30px 0;
+		position: relative;
+		overflow: hidden;
+	}
+	.footer-container a {
+		color:  #AAA;
+	}	
+	.footer-container h3 {
+		text-align: center;
+		margin: 0 auto 15px;
+	}
+/* footer site nav */
+.footer-container nav {
+	font-size: 0.85em;
+	
+	text-transform: uppercase;
+	text-align: center;
+	
+}
+	.footer-container nav h4 {
+		display: inline-block;
+		margin: 0;
+	}
+	.footer-container nav ul {
+		padding: 0; /* accounts for reset values of 30px */
+		margin-top: -5px;
+	}
+	.footer-container nav ul li {
+		//background: pink;
+		display: inline-block;
+		margin-left: 5px;
+	}
+	.footer-container nav ul li a {
+		//background: yellow;
+	}
+	.footer-container nav ul li a:hover {
+		color: white;
+	}
+	
+	/* button to send user to top of page */
+	#up-top  {	
+		background: #555 url('../images/arrow-top-dark.png') no-repeat center;
+		background-size: contain;
+		
+		box-shadow: #333 0 1px 10px;
+		border-radius: 0 0 3px 3px;
+		
+		display: block;
+		width: 40px;
+		height: 30px;
+		
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		
+		margin: ;
+		padding: ;
+		
+	}
+	#up-top:hover {
+		background: #555 url('../images/arrow-top-hover.png') no-repeat center;
+		background-size: contain;
+	}
+
+/* footer sub information */
+#copyright, #social-links {
+	display: inline-block;
+}
+#copyright {
+	margin-right: 20px;
+	text-transform: uppercase;	
+}
+#copyright span {
+	font-size: 1.5em;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+}
+/* social media icons/links */
+#social-links {
+	float: right;	
+}
+	#social-links a {
+		width: 24px;
+		display: inline-block;
+		vertical-align: top;
+		
+		-webkit-transform: translateZ(0);
+		transform: translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		-webkit-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+	}
+	#social-links a:first-of-type {
+		margin-right: 10px;
+	}
+	#social-links a:hover, #social-links a:focus, #social-links a:active {
+		-webkit-transform: scale(1.2);
+		transform: scale(1.2);
+	}
+	#social-links a img {
+		width: 24px;
+	}
+
+
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .logo {
+    margin: 20px 0;
+}
+
+
+
+/* ====================
+   CSS3 Effects
+   ==================== */
+@media only screen and (min-width: 480px) {
+
+}
+@media only screen and (min-width: 768px) {	
+
+}
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    INTERMEDIATE: Menu
+   ==================== */
+	.logo {
+		width: 75%;
+		margin: 30px auto;
+	}
+	.header-container nav {
+		text-align: center;
+	}
+    .header-container nav a {
+        //float: left;
+		display: inline-block;
+		margin:  0 1.7% 15px 0;
+        padding: 5px 2%;
+    }
+    .header-container nav li:last-child a {
+        margin-right: 0;
+    }
+
+/* ========================
+    INTERMEDIATE: IE Fixes
+   ======================== */
+
+    .header-container nav ul li {
+        display: inline;
+    }
+
+    .oldie nav a {
+        margin: 0 0.7%;
+    }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    WIDE: CSS3 Effects
+   ==================== */
+	
+	
+	
+/* ============
+    WIDE: Menu
+   ============ */
+    .logo {
+        margin: 30px auto;
+		max-width: 600px;
+    }
+	.header-container nav {
+		text-align: left;
+		padding: ;
+		background: #555;
+	}
+	.header-container nav a {
+		background: #555;
+		
+		margin: 0;		
+		//margin-right: -5px; /* not sure why this correction is needed… check normalize.css */
+		padding-right: px;
+		
+		
+		transition: color .15s ease-in, text-decoration .25s ease-in;
+		-moz-transition: color .15s ease-in, text-decoration .25s ease-in;
+	    -o-transition: color .15s ease-in, text-decoration .25s ease-in;
+	    -webkit-transition: color .15s ease-in, text-decoration .25s ease-in;
+	}
+	.header-container nav a:last-of-type {
+	
+	}
+
+
+	
+/* ============
+    WIDE: Main
+   ============ */
+	
+    .main article {
+        float: left;
+        width: 57%;
+    }
+
+    .main aside {
+        float: right;
+        width: 28%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1140px) {
+
+/* ===============
+    Maximal Width
+   =============== */
+
+    .wrapper {
+        width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+	
+	
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+
+
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a, a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[logo]:after {
+        content: " (" attr(logo) ")";
+    }
+
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+        content: "";
+    }
+
+    pre, blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr, img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,  h3 {
+        page-break-after: avoid;
+    }
+}

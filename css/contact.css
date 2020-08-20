@@ -1,0 +1,75 @@
+/* Main Content: Articles of body */
+.main article {}
+	.main article h2 {
+		text-align: center;
+		border-bottom: none;
+	}
+	.main article h3 {
+		border-bottom: 1px solid #333;
+		margin-bottom: 0;
+		font-family: 'Fira Sans Extra Condensed', sans-serif;
+	}
+ 	.main article span {
+		display: block;
+	}
+	/* link to warranty registration page */
+	#warranty-link {
+		text-align: center;
+	}
+ 
+ 
+ /* Main Content: General Info */
+ .main article #general-info {
+ 	margin-bottom: 30px;
+ }
+ 
+ 
+ /* Main Content: Team Info */
+ #team-list section, #team-list-sub section {
+ 	margin-bottom: 30px;
+ }
+ #team-list img, #team-list-sub img {
+ 	background: white;
+	border-radius: 50%;	
+	height: 70px;
+	width: 70px;
+	margin: 5px 20px 0px auto;
+	padding: 5px;
+	float: left;
+ }
+ #team-list h3, #team-list-sub h3,
+ #team-list h4, #team-list-sub h4 {
+ 	margin: 0 auto;
+ }
+ 
+ 
+ /* Main Content: Team Info - Lead Team */
+ .main article #team-list {}
+ 	#team-list section {}
+ 	#team-list h3 {}
+ 	#team-list img {}
+ 	#team-list h4 {}
+ 	#team-list span {}
+ 	
+ 
+ /* Main Content: Team Info - Sub Team */
+ .main article #team-list-sub {}
+	#team-list-sub section {
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;		
+	}
+	#team-list-sub section:first-of-type {
+		margin-right: 8%;
+	}
+	#team-list-sub h3 {}
+	#team-list-sub img {}
+	#team-list-sub h4 {}
+
+
+/* Main Content: Aside */
+.main aside h3:before {
+	background: url('../images/icon_task.png') no-repeat;
+	background-size: contain;
+}
+

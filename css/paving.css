@@ -1,0 +1,78 @@
+/* certification images (osha and car) */
+.main-container .main article section img {
+}
+#cert {
+	margin-top: -25px;
+}
+.certification_img {
+	
+	width: 100px;
+	margin-top: 25px;
+	padding: 5px;
+	background: white;
+}
+.certification_img:not(:last-of-type) {
+	margin-right: 20px;
+}
+
+
+
+/* collapsibles */
+.collapsible-header {
+	font-weight: bold;
+}
+
+.collapsible {
+	background-color: #ccc;
+	border: 1px solid #777;
+	color: #333;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+	display: block;
+	position: relative;
+}
+	.collapsible:not(:last-of-type) {
+		border-bottom: none;
+	}
+.collapsible:before, .collapsible.collapse-active:before {
+	content: '';
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 50%;
+	top: 25%;
+	left: 0;
+}
+	.collapsible:before {
+		background: url('../images/arrow-right.png') no-repeat center center;
+		background-size: 100%;
+	}
+	.collapsible.collapse-active:before {
+		background: url('../images/arrow-bottom.png') no-repeat center center;
+		background-size: 100%;
+	}
+
+.collapsible:hover {
+	text-shadow: black 0 1px 1px;
+}
+.collapse-active, .collapsible:hover {
+	background-color: #323232;
+	color:  #CCC;
+	text-shadow: black 0 1px 1px;
+}
+.collapse-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #EEE;
+	
+	border: 1px solid #CCC;
+	border-top: none;
+}
+.collapse-content:not(:last-of-type) {
+	border-bottom: none;
+}
+.collapse-content p {
+	margin: 10px 15px;
+}
